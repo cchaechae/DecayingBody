@@ -36,7 +36,7 @@ public class KinectRenderDemo extends PApplet {
 	}
 
 	public void settings() {
-		createWindow(true, true, .5f);
+		createWindow(false, false, .5f);
 	}
 
 	public void setup(){
