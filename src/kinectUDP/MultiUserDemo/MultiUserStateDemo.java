@@ -51,7 +51,7 @@ public class MultiUserStateDemo extends PApplet {
 	}
 
 	public void settings() {
-		createWindow(true, false, .25f);
+		createWindow(false, false, .25f);
 	}
 
 	public void setup(){

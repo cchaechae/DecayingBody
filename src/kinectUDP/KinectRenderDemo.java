@@ -1,5 +1,7 @@
 package kinectUDP;
 
+import java.io.IOException;
+
 import processing.core.PApplet;
 import processing.core.PVector;
 
@@ -36,7 +38,7 @@ public class KinectRenderDemo extends PApplet {
 	}
 
 	public void settings() {
-		createWindow(true, true, .5f);
+		createWindow(false, false, .5f);
 	}
 
 	public void setup(){
@@ -44,15 +46,14 @@ public class KinectRenderDemo extends PApplet {
 		/*
 		 * use this code to run your PApplet from data recorded by UPDRecorder 
 		 */
-		/*
 		try {
 			kinectReader = new KinectBodyDataProvider("test.kinect", 10);
 		} catch (IOException e) {
 			System.out.println("Unable to creat e kinect producer");
 		}
-		 */
+
 		
-		kinectReader = new KinectBodyDataProvider(8008);
+		//kinectReader = new KinectBodyDataProvider(8008);
 		kinectReader.start();
 
 	}
