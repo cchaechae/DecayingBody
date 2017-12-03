@@ -1,5 +1,7 @@
 package kinectUDP;
 
+import java.io.IOException;
+
 import processing.core.PApplet;
 import processing.core.PVector;
 
@@ -46,22 +48,14 @@ public class MultiUserAppDemo extends PApplet {
 
 	public void setup(){
 
-		/*
-		 * use this code to run your PApplet from data recorded by UPDRecorder 
-		 */
-		
-		/*
 		try {
-			kinectReader = new KinectBodyDataProvider("test.kinect", 10);
+			kinectReader = new KinectBodyDataProvider("noExitTest", 10);
 		} catch (IOException e) {
-			System.out.println("Unable to creat e kinect producer");
+			System.out.println("Unable to create kinect producer");
 		}
-		 */
 		
 		kinectReader = new KinectBodyDataProvider(8008);
 
-		
-		
 		kinectReader.start();
 
 	}
@@ -69,9 +63,6 @@ public class MultiUserAppDemo extends PApplet {
 		setScale(.5f);
 		
 		noStroke();
-
-
-
 		background(200,200,200);
 
 		fill(255,0,0);
