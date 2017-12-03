@@ -43,11 +43,21 @@ public class KinectRenderDemo extends PApplet {
 
 	public void setup(){
 
+<<<<<<< HEAD
+=======
+		/*
+		 * use this code to run your PApplet from data recorded by UPDRecorder 
+		 */
+>>>>>>> origin/master
 		try {
 			kinectReader = new KinectBodyDataProvider("test.kinect", 10);
 		} catch (IOException e) {
 			System.out.println("Unable to creat e kinect producer");
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 		
 		//kinectReader = new KinectBodyDataProvider(8008);
 		kinectReader.start();
